@@ -1,0 +1,347 @@
+:root {
+  --corp-color: #00A4E5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #48555B;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.corp {
+  color: var(--corp-color);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 2.30625px;
+  text-transform: uppercase;
+}
+
+.header {
+  height: 100vh;
+  background: url(../../img/header_bg.webp) no-repeat center/cover;
+  background-color: #3A4F63;
+  padding: 42px 0 71px 0;
+  color: #fff;
+}
+.header-wreaper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  display: block;
+  width: 102;
+  height: 23;
+}
+.header__title {
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 72px;
+  letter-spacing: 5.70937px;
+  text-align: center;
+}
+.header__subtitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  align-items: flex-end;
+  text-align: center;
+}
+.header_scroll {
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 3.7px;
+  text-transform: uppercase;
+}
+.header_scroll:hover {
+  color: var(--corp-color);
+}
+
+.nav {
+  padding: 25px 0 24px 0;
+  border-bottom: 1px solid #E6E6E6;
+}
+.nav__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__logo_nav {
+  display: block;
+  width: 79px;
+  height: 18px;
+}
+.nav__menu {
+  display: flex;
+  gap: 0 40px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: #48555B;
+  text-transform: uppercase;
+}
+.nav__link {
+  transition: 0.2s;
+}
+.nav__link:hover {
+  color: var(--corp-color);
+  transition: 0.2s;
+}
+
+.story {
+  padding: 48px 0;
+}
+.story__title {
+  margin-bottom: 92px;
+  text-align: center;
+  position: relative;
+}
+.story__title::after {
+  content: "";
+  position: absolute;
+  top: 36px;
+  left: 50%;
+  width: 50px;
+  height: 2px;
+  background-color: var(--corp-color);
+  transform: translateX(-50%);
+}
+.story-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.article {
+  max-width: 406px;
+}
+.article__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 0.1875px;
+  margin-bottom: 30px;
+}
+.article__text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 0.426667px;
+}
+
+.pictures {
+  display: flex;
+  gap: 0 20px;
+}
+.pictures__item {
+  max-width: max-content;
+  display: block;
+  position: relative;
+}
+.pictures__img {
+  display: block;
+  width: 140px;
+  height: 224px;
+}
+.pictures__text {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.1875px;
+  color: #FFFFFF;
+  position: absolute;
+  top: 15px;
+  left: 14px;
+  z-index: 10;
+}
+
+.capabilites {
+  padding: 81px 0 115px 0;
+}
+.capabilites__headtitle {
+  display: flex;
+  justify-content: space-between;
+}
+.capabilites__title {
+  position: relative;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 2.30625px;
+}
+.capabilites__title::after {
+  content: "";
+  position: absolute;
+  top: 36px;
+  left: 0%;
+  width: 50px;
+  height: 2px;
+  background-color: var(--corp-color);
+  transform: translateX(0%);
+}
+.capabilites__info {
+  display: flex;
+  gap: 0 31px;
+}
+.capabilites__text {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 19px;
+  letter-spacing: 0.2px;
+  max-width: 405px;
+}
+.capabilites__link {
+  display: block;
+  background-color: var(--corp-color);
+  padding: 11px 29px;
+  max-width: 150px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+}
+.capabilites__link:hover {
+  background-color: #007fb2;
+}
+.capabilites__body {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.capabilites__card {
+  border: 1px solid #E6E6E6;
+  max-width: 295px;
+  padding: 38px 22px;
+}
+.capabilites__img {
+  display: block;
+  width: 70px;
+  height: 75px;
+  margin-bottom: 25px;
+}
+.capabilites__subtitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.426667px;
+  margin-bottom: 13px;
+}
+.capabilites__subtext {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 0.1875px;
+}
+
+.button {
+  background: url(../../img/footer.webp) no-repeat center/cover;
+  background-color: #3A4F63;
+  padding: 120px 0 231px 0;
+}
+.button__relativ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.button__text {
+  width: 350px;
+  height: 72px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 0.15px;
+  color: #48555B;
+}
+.button__title {
+  padding: 11px 26px;
+  margin-top: 35px;
+  max-width: 150px;
+  display: block;
+  font-style: normal;
+  font-weight: 700;
+  background-color: var(--corp-color);
+  font-size: 13px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+.button__title:hover {
+  background-color: #007fb2;
+}
+
+.newsletter {
+  background-color: #171819;
+  padding: 35px 0 34px 0;
+}
+.newsletter__subtitle {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 51px;
+}
+.newsletter__title {
+  margin-right: 70px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.846154px;
+  color: #FFFFFF;
+}
+.newsletter__link {
+  padding-left: 16px;
+  width: 250px;
+  height: 40px;
+  background: #FFFFFF;
+  border: none;
+}
+.newsletter__button {
+  width: 150px;
+  height: 40px;
+  background-color: var(--corp-color);
+  border: none;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+.newsletter__button:hover {
+  background-color: #007fb2;
+}
+.newsletter__backtik {
+  text-align: center;
+  padding-top: 51px;
+  padding-bottom: 23px;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.846154px;
+  color: #FFFFFF;
+}/*# sourceMappingURL=style.css.map */
